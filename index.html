@@ -1,22 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age Calculator</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+
+    <title>Advanced Age Calculator</title>
 </head>
+
 <body>
 
-<div class="container">
-    <h2>Age Calculator</h2>
+    <div class="background"></div>
 
-    <input type="date" id="dob">
-    <button onclick="calculateAge()">Calculate Age</button>
+    <div class="container">
 
-    <div id="result"></div>
-</div>
+        <!-- Header -->
 
-<script src="script.js"></script>
+        <div class="header">
+
+            <h1>
+                🎂 Age Calculator
+            </h1>
+
+            <button id="themeBtn">
+                🌙
+            </button>
+
+        </div>
+
+        <!-- Live Time -->
+
+        <div class="clock">
+
+            <i class="fa-solid fa-clock"></i>
+
+            <span id="liveClock">
+                Loading...
+            </span>
+
+        </div>
+
+        <!-- Input -->
+
+        <div class="inputBox">
+
+            <label>
+
+                Select Your Birth Date
+
+            </label>
+
+            <input type="date" id="dob">
+
+            <button id="calculateBtn">
+
+                Calculate Age
+
+            </button>
+
+        </div>
+
+        <!-- Main Result -->
+
+        <div id="resultSection">
+
+            <div class="cards">
+
+                <div class="card">
+                    <h2 id="years">0</h2>
+                    <p>Years</p>
+                </div>
+
+                <div class="card">
+                    <h2 id="months">0</h2>
+                    <p>Months</p>
+                </div>
+
+                <div class="card">
+                    <h2 id="days">0</h2>
+                    <p>Days</p>
+                </div>
+
+            </div>
+
+            <!-- Live Counter -->
+
+            <div class="cards">
+
+                <div class="card small">
+                    <h2 id="hours">0</h2>
+                    <p>Hours</p>
+                </div>
+
+                <div class="card small">
+                    <h2 id="minutes">0</h2>
+                    <p>Minutes</p>
+                </div>
+
+                <div class="card small">
+                    <h2 id="seconds">0</h2>
+                    <p>Seconds</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Information -->
+
+        <div class="infoBox">
+
+            <div class="info">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                <span>
+
+                    Day of Birth :
+
+                </span>
+
+                <strong id="birthDay">
+
+                    -
+
+                </strong>
+
+            </div>
+
+            <div class="info">
+
+                <i class="fa-solid fa-star"></i>
+
+                <span>
+
+                    Zodiac :
+
+                </span>
+
+                <strong id="zodiac">
+
+                    -
+
+                </strong>
+
+            </div>
+
+        </div>
+
+        <!-- Next Birthday -->
+
+        <div class="birthdayBox">
+
+            <h3>
+
+                🎉 Next Birthday
+
+            </h3>
+
+            <p id="nextBirthday">
+
+                --
+
+            </p>
+
+        </div>
+
+        <!-- Progress -->
+
+        <div class="progressSection">
+
+            <h3>
+
+                Birthday Progress
+
+            </h3>
+
+            <div class="progress">
+
+                <div id="progressBar"></div>
+
+            </div>
+
+            <p id="progressText">
+
+                0%
+
+            </p>
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+
+            <button id="copyBtn">
+
+                <i class="fa-solid fa-copy"></i>
+
+                Copy
+
+            </button>
+
+            <button id="voiceBtn">
+
+                <i class="fa-solid fa-volume-high"></i>
+
+                Speak
+
+            </button>
+
+        </div>
+
+        <!-- Footer -->
+
+        <footer>
+
+            Made with ❤️ using HTML CSS JavaScript
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
