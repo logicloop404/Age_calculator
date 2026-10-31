@@ -82,8 +82,6 @@ git clone https://github.com/YOUR_USERNAME/Age_calculator.git
 
 **Pankaj Bhoge**
 
-- GitHub: https://github.com/logicloop404
-- LinkedIn: https://linkedin.com/in/pankaj-bhoge-6aa83a318
 
 ---
 
